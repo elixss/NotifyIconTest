@@ -24,6 +24,7 @@ namespace NotifyIconTest
                 new("Send warning", null, (sender, e) => SendWarning()),
                 new("Send error", null, (sender, e) => SendError()),
                 new("Send question", null, (sender, e) => SendQuestion()),
+                new("Terminate", null, (sender, e) => Application.Exit())
             });
 
             TrayIcon.ContextMenuStrip = contextMenu;
